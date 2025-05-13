@@ -11,7 +11,7 @@ namespace NetBridge.Dispatching.Tests.Events
 
     public class SampleEventHandler : IEventHandler<SampleEvent>
     {
-        public static List<string> Logs = new();
+        public static List<string> Logs = [];
 
         public Task HandleAsync(SampleEvent @event, CancellationToken cancellationToken = default)
         {

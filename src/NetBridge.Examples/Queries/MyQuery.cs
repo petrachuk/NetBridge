@@ -3,7 +3,7 @@
 namespace NetBridge.Examples.Queries
 {
     // Запрос
-    public class MyQuery : IQuery<string>
+    public class MyQuery : IQuery<MyQueryResponse>
     {
         public string? QueryParameter { get; set; }
     }
